@@ -1,10 +1,3 @@
-# ArtronShop_SHT45
-
-Arduino library of SHT45 Digital humidity and temperature sensor
-
-## Examples
-
-```C++
 #include <Arduino.h>
 #include <Wire.h>
 #include <ArtronShop_SHT45.h>
@@ -34,5 +27,3 @@ void loop() {
   }
   delay(1000);
 }
-```
-
