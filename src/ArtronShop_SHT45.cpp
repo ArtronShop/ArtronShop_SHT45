@@ -13,7 +13,7 @@ bool ArtronShop_SHT45::begin() {
 bool ArtronShop_SHT45::measure() {
     this->_wire->beginTransmission(this->_addr);
     this->_wire->write(0xFD);
-    if (this->_wire->endTransmission(false) != 0) {
+    if (this->_wire->endTransmission() != 0) {
         this->_t = -99;
         this->_h = -99;
         return false;
